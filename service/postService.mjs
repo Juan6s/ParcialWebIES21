@@ -34,7 +34,7 @@ export function deletePost(id) {
     if (data.length != 0) {
       localStorage.setItem("posts", JSON.stringify(data));
     } else {
-      localStorage.clear();
+      localStorage.removeItem("posts");
     }
   }
 }

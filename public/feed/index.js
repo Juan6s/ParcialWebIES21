@@ -17,13 +17,15 @@ form.addEventListener("submit", function (e) {
   const id = savePost({ url, title, description });
   console.log(id);
   render();
-  document.querySelector(`#close${id}`).addEventListener("click", () => {
-    console.log("ACA");
-    deletePost(id);
-    render();
-  });
 });
 
 function render() {
   document.querySelector("#postsC").innerHTML = renderPosts();
+  const buttons = document.querySelectorAll(`.close`);
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+      deletePost(button.id);
+      render();
+    });
+  });
 }

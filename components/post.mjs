@@ -15,7 +15,7 @@ export function createPost(title, description, url, id) {
             <div class="h5 m-0">@JFCarrizo</div>
             <div class="h7 text-muted">Juan Carrizo</div>
           </div>
-          <button id="close${id}" class="btn-close"></button>
+          <button id="${id}" class="btn-close close"></button>
         </div>
       </div>
     </div>
