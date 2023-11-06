@@ -7,15 +7,16 @@ export function createPost(title, description, url, id) {
             <div class="h5 m-0">@JFCarrizo</div>
             <div class="h7 text-muted">Juan Carrizo</div>
           </div>
-          <button id="${id}" class="btn-close close"></button>
+         
         </div>
       </div>
+      <button id="${id}" class="btn-close close"></button>
     </div>
     <div class="card-body">
       <div class="text-muted h7 mb-2">
         <i class="fa fa-clock-o"></i>10 min ago
       </div>
-      <a class="card-link" href="#">
+      <a class="card-link">
         <h5 class="card-title">
           ${title}
         </h5>
@@ -26,8 +27,8 @@ export function createPost(title, description, url, id) {
       </p>
     </div>
     <div class="card-footer">
-      <a href="#" class="card-link"><i class="fa fa-gittip"></i> Like</a>
-      <a href="#" class="card-link"><i class="fa fa-comment"></i> Comment</a>
+      <a class="card-link"><i class="fa fa-gittip"></i> Like</a>
+      <a class="card-link"><i class="fa fa-comment"></i> Comment</a>
 
     </div>
   </div>`;
