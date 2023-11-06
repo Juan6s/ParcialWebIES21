@@ -12,13 +12,13 @@ export function savePost({ url, title, description }) {
     }
     data.push({ url, title, description, id });
     localStorage.setItem("posts", JSON.stringify(data));
-    return { url, title, description, id };
+    return id;
   }
 
   var data = [];
   data.push({ url, title, description, id: 1 });
   localStorage.setItem("posts", JSON.stringify(data));
-  return { url, title, description, id: 1 };
+  return 1;
 }
 
 export function deletePost(id) {
@@ -31,7 +31,11 @@ export function deletePost(id) {
         data.push(post);
       }
     }
-    localStorage.setItem("posts", JSON.stringify(data));
+    if (data.length != 0) {
+      localStorage.setItem("posts", JSON.stringify(data));
+    } else {
+      localStorage.clear();
+    }
   }
 }
 
@@ -42,8 +46,9 @@ export function renderPosts() {
 
     var data = "";
     for (const post of parsedPosts) {
-      data += createPost("aca", "aca", "aca", 2);
+      data += createPost(post.title, post.description, post.url, post.id);
     }
     return data;
   }
+  return "";
 }

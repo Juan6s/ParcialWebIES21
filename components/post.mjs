@@ -15,6 +15,7 @@ export function createPost(title, description, url, id) {
             <div class="h5 m-0">@JFCarrizo</div>
             <div class="h7 text-muted">Juan Carrizo</div>
           </div>
+          <button id="close${id}" class="btn-close"></button>
         </div>
       </div>
     </div>
@@ -35,9 +36,7 @@ export function createPost(title, description, url, id) {
     <div class="card-footer">
       <a href="#" class="card-link"><i class="fa fa-gittip"></i> Like</a>
       <a href="#" class="card-link"><i class="fa fa-comment"></i> Comment</a>
-      <a href="#" class="card-link"
-        ><i class="fa fa-mail-forward"></i> Share</a
-      >
+
     </div>
   </div>`;
 }

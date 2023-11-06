@@ -42,24 +42,24 @@
         </ul>
     </div>
     <div class="card-body">
-        <form class="needs-validation">  
+        <form id="clase" method="post">  
             <div class="tab-content" id="myTabContent">
                 <div class="tab-pane fade show active" id="posts" role="tabpanel" aria-labelledby="posts-tab">
                     <div class="mt-1">
-                        <label class="" for="title">Titulo</label>
-                        <input type="text" class="form-control" placeholder="Montañas" aria-label="Username">
+                        <label for="title">Titulo</label>
+                        <input id="title" type="text" class="form-control" placeholder="Montañas" aria-label="Username"/>
                     </div>
                     <div class="mt-1">
-                        <label class="" for="description">Describi la imagen</label>
-                        <textarea class="form-control" id="description" rows="3" placeholder="las lindas sierras cordobesas"></textarea>
+                        <label for="description">Describi la imagen</label>
+                        <textarea  id="description" class="form-control" id="description" rows="3" placeholder="las lindas sierras cordobesas"></textarea>
                     </div>      
                     <div class="mt-1">
-                        <label class="" for="url">Url</label>
-                        <input type="url" id="url "class="form-control" placeholder="https://fotos.perfil.com/2023/11/03/avion-con-los-colores-de-boca-juniors-1690112.jpg" aria-label="url">
+                        <label  for="url">Url</label>
+                        <input id="url" type="text" class="form-control" placeholder="url" aria-label="Username"/>
                     </div>      
                 </div>
             </div>
-            <button type="submit" class="btn btn-primary mt-2">Publicar!</button>
+            <button type="submit" id="addPost" class="btn btn-primary mt-2">Publicar!</button>
         </form>
     </div>
 </div>
@@ -70,8 +70,9 @@
     </div>
     <!-- Post /////-->
 
-    <script type="module" src="./index.js"></script>
+   
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-  </body>
+    <script type="module" src="./index.js"></script>
+</body>
 </html>
