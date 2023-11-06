@@ -1,5 +1,7 @@
-import { post } from "../../components/post.mjs";
+import {
+  savePost,
+  deletePost,
+  renderPosts,
+} from "../../service/postService.mjs";
 
-const postsContainer = document.querySelector("#postsC");
-console.log(postsContainer);
-postsContainer.innerHTML = post("aca", "aca2", "aca3");
+document.querySelector("#postsC").innerHTML = renderPosts();

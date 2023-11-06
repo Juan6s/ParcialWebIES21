@@ -1,4 +1,4 @@
-export function post(title, description, url) {
+export function createPost(title, description, url, id) {
   return `<div class="card gedf-card mx-auto p-2 mt-5 mb-5">
     <div class="card-header">
       <div class="d-flex justify-content-between align-items-center">
