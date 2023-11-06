@@ -12,10 +12,8 @@ form.addEventListener("submit", function (e) {
   const title = document.querySelector("#title").value;
   const url = document.querySelector("#url").value;
   const description = document.querySelector("#description").value;
-  if (!title || !url) return;
 
-  const id = savePost({ url, title, description });
-  console.log(id);
+  savePost({ url, title, description });
   render();
 });
 
